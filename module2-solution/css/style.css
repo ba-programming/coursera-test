@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+    padding-left: 10px;
+}
+.col {
+    float: left;
+    background-color: #999999;
+    border: 1px solid black;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    padding-top: 40px;
+    position: relative;
+}
+h1 {
+    font-size: 175%;
+    text-align:  center;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: calc(33.33% - 10px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: calc(50% - 10px);
+    }
+    .col-md-12 {
+        width: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: calc(100% - 10px);
+    }
+}
+
+.title {
+    position: absolute;
+    width: 125px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+    font-size: 125%;
+}
+.chicken {
+    background-color: #d59998;
+}
+.beef {
+    background-color: #c14643;
+    color: white;
+}
+
+.sushi {
+    background-color: #e5d198;
+}
